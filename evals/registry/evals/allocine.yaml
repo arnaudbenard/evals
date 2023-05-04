@@ -1,0 +1,10 @@
+allocine:
+    id: allocine.dev.v0
+    metrics: [accuracy]
+
+allocine.dev.v0:
+    class: evals.elsuite.basic.match:Match
+    args:
+        samples_jsonl: allocine/samples.jsonl
+        few_shot_jsonl: allocine/few_shot.jsonl
+        num_few_shot": 1
